@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <!--parametr lang przekazuje przeglądarce informacje odnośnie języka dokumentu-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--viewport charakteryzuje, jak się ma zachować urządzenie w momencie wczytywania dokumentu. W tym przypadku szerokość dokumentu jest równa szerokości ekranu urządzenia, a skala początkowa jest równa 100%-->
+    <title>Strona testowa</title>
+    <meta
+      name="description"
+      content="Opis zawartości dokumentu (max 160 zzs)"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Pobranie czcionki fontawesome-->
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Opis obrazka" /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="#">
+            <li>Start</li>
+          </a>
+          <a href="#onas">
+            <!--odnośniki na zasadzie kotwicy, kierujące do odpowiedniego miejsca w dokumencie oznaczonego tą samą nazwą dla parametru id-->
+            <li>O nas</li>
+          </a>
+          <a href="#paralaxa">
+            <li>Paralaxa</li>
+          </a>
+          <a href="#kontakt">
+            <li>Kontakt</li>
+          </a>
+          <a href="#panele">
+            <li>Panele</li>
+          </a>
+        </ul>
+      </div>
+      <div class="socialki">
+        <a href="https://fb.com" target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <!-- parametr target w wartością _blank powoduje otwarcie linku w nowej zakładce przeglądarki-->
+        <a href="https://youtube.com" target="_blank"
+          ><i class="fa-brands fa-square-youtube"></i
+        ></a>
+      </div>
+    </div>
+    <div class="baner full">
+      <div class="kratka">
+        <h1>Tytuł wpisu</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eum
+          libero quo eos perspiciatis consectetur, excepturi neque?
+        </p>
+        <a href="#">Link</a>
+      </div>
+    </div>
+    <div class="opis full" id="onas">
+      <!--parametr id dla kotwicy, czyli linku z menu. jego nazwa musi być zgodna z tą, którą podaliśmy jako link w menu (bez #)-->
+      <div class="zdjecie">
+        <img src="img/obraz.png" alt="coś tam" />
+      </div>
+      <div class="opis">Opis</div>
+    </div>
+    <div class="paralaxa full" id="paralaxa">
+      <div class="kratka">
+        <h1>Tytuł wpisu</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eum
+          libero quo eos perspiciatis consectetur, excepturi neque?
+        </p>
+        <a href="#">Link</a>
+      </div>
+    </div>
+    <div class="kontakt full" id="kontakt">
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.6779726932377!2d18.95304737565471!3d50.27927117156003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cded4efb92f5%3A0x987ba548067e7659!2sSportowa%2032%2C%2041-506%20Chorz%C3%B3w!5e0!3m2!1spl!2spl!4v1702193627635!5m2!1spl!2spl"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="formularz">Formularz</div>
+    </div>
+    <div class="panele full" id="panele">
+      <div class="tytul">Jakiś&nbsp;<span>tytuł</span></div>
+      <div class="wiersz">
+        <div class="panel paski">
+          <img src="img/img1.webp" alt="man" />
+          <p>man</p>
+        </div>
+        <div class="panel paski">
+          <img src="img/img2.webp" alt="woman" />
+          <p>woman</p>
+        </div>
+        <div class="panel">
+          <div class="scan">
+            <div class="odcisk"></div>
+            <h3>Skanowanie...</h3>
+          </div>
+        </div>
+        <div class="panel obrotowy">
+          <div class="face face1">
+            <div class="content">
+              <i class="fa-solid fa-pen-nib"></i>
+              <h3>Design</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Laborum, commodi culpa delectus, velit aliquid quae voluptas,
+                quidem dolores sequi incidunt nemo recusandae distinctio quaerat
+                eligendi esse necessitatibus officiis dolorem quas?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stopka">
+      <div class="footer">
+        Stopka 1
+        <img src="img/logo.png" alt="Opis obrazka" />
+      </div>
+      <div class="footer">Stopka 2</div>
+      <div class="footer">Stopka 3</div>
+    </div>
+    <!--<div class="test">Jakiś tekst</div>-->
+  </body>
+</html>
